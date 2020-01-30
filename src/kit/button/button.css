@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  min-width: 110px;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #f2f2f7;
+  font: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  background-color: #636366;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
+
+  &_accent {
+    border: 1px solid #f9d64a;
+  }
+
+}

@@ -1,0 +1,58 @@
+.stake-pad {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__overlay {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 5;
+    flex-basis: 10%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--color-accent-second);
+    border: 0;
+    border-bottom: 1px solid #2c2c2e;
+    border-right: 1px solid #2c2c2e;
+
+    &_accent {
+      font-weight: 700;
+    }
+
+    &:active {
+      color: #000000;
+      background-color: #ffffff;
+
+      .stake-pad__hint {
+        bottom: 100%;
+        visibility: visible;
+      }
+    }
+
+    &:nth-last-child(-n + 3) {
+      flex-basis: calc(100% / 3);
+    }
+  }
+
+  &__hint {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #ffffff;
+    visibility: hidden;
+  }
+}
